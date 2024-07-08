@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Cambria, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #FF1801;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    margin-bottom: 1rem;
+}
+
+.f1-logo {
+    max-width: 200px;
+    height: auto;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #f4f4f4;
+}
+
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+h2 {
+    color: #FF1801;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #FF1801;
+    padding-bottom: 0.5rem;
+}
+
+.highlight-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.highlight {
+    flex-basis: 48%;
+    margin-bottom: 1rem;
+}
+
+#driver-stats {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#quiz-container {
+    background-color: #f4f4f4;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+#answers {
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+button {
+    background-color: #FF1801;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    margin-top: 1rem;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #D10000;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+}
+
+footer ul {
+    list-style-type: none;
+    margin-top: 1rem;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #FF1801;
+}
+
+@media (max-width: 600px) {
+    .highlight-container {
+        flex-direction: column;
+    }
+
+    .highlight {
+        flex-basis: 100%;
+    }
+
+    #answers {
+        grid-template-columns: 1fr;
+    }
+}
